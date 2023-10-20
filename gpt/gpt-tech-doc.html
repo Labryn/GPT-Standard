@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>GPT Session Save File (GSSF) Comprehensive Technical Document</title>
+<link href="../assets/css/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+<h1>GPT Session Save File (GSSF) Comprehensive Technical Document</h1>
+</header>
+<nav>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#gpt-schema">GPT Schema</a></li>
+<li><a href="#file-format">.GPT File Format</a></li>
+<li><a href="#implementation">Implementation</a></li>
+<li><a href="#version-control">Version Control &amp; Checksums</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#community">Community and Contribution</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+</ul>
+</nav>
+<div class="main-content">
+<!-- Introduction -->
+<section id="introduction">
+<h2>Introduction</h2>
+<p>What is GSSF and Why Is It Needed?</p>
+<p>The GPT Session Save File (.gpt) aims to standardize the storage of interactions and metadata for GPT-based conversational agents. According to studies, 67% of users have expressed frustration with disjointed conversational experiences with chatbots. This standard addresses such challenges by enabling more meaningful, effective, and secure human-AI interactions.</p>
+<p>The Human Element: Our Journey</p>
+<p>Creating this standard hasn't just been a technical journey but also a human one. The need for a standard became clear through our own challenges with "GPT Amnesia," where valuable session data and context were lost from one interaction to the next. This isn't just a tech solution; it's an enabler of more meaningful, effective, and secure human-AI interactions.</p>
+</section>
+<!-- GPT Schema -->
+<section id="gpt-schema">
+<h2>GPT Schema</h2>
+<p>The GPT Schema serves as the backbone of the .gpt file format, defining the structure and types of data that can be stored.</p>
+<!-- Metadata Section -->
+<h3>Metadata Section</h3>
+<div class="gpt-code-box">
+<code>
+                    "title": "A name given to the session.",
+                    "subject": "The topic of the session.",
+                    "description": "An account of the session.",
+                    "language": "Language of the session.",
+                    "rights": "Information about rights held in and over the session.",
+                    "format": ".gpt"
+                </code>
+</div>
+<!-- PBCore Inspired Fields -->
+<p>PBCore Inspired Fields</p>
+<div class="gpt-code-box">
+<code>
+                    "duration": "Length of the session.",
+                    "genre": "Type or category of the session's content.",
+                    "audience_level": "The intended audience's expertise level.",
+                    "annotation": "Additional notes or clarifications about the session."
+                </code>
+</div>
+<!-- Additional Fields -->
+<p>Additional Fields</p>
+<div class="gpt-code-box">
+<code>
+                    "original_author": "The original author of the session.",
+                    "original_author_contact": "Optional contact information for the original author.",
+                    "original_draft_date": "The original draft timestamp."
+                </code>
+</div>
+</section>
+<!-- .GPT File Format -->
+<section id="file-format">
+<h2>.GPT File Format</h2>
+<p>A .gpt file is a JSON file with two main sections: Metadata and Interactions. The Metadata section will store all the session-related data, while the Interactions section will capture the dialogue between the user and the GPT model.</p>
+</section>
+<!-- Implementation -->
+<section id="implementation">
+<h2>Implementation</h2>
+<p>Reading and editing can also be done using text editors or custom software designed for handling .gpt files.</p>
+<div class="gpt-code-box">
+<code>
+                    // Sample JavaScript code to create a .gpt file
+                    const fs = require('fs');
+                    const data = { metadata: { /* your metadata here */ }, interactions: [ /* your interactions here */ ] };
+                    fs.writeFileSync('session.gpt', JSON.stringify(data));
+                </code>
+</div>
+</section>
+<!-- Version Control & Checksums -->
+<section id="version-control">
+<h2>Version Control &amp; Checksums</h2>
+<p>Semantic Versioning (SemVer) will be used for all .gpt files. It follows the pattern of MAJOR.MINOR.PATCH, where:</p>
+<ul>
+<li>MAJOR version increments indicate incompatible changes.</li>
+<li>MINOR version increments indicate backward-compatible new features.</li>
+<li>PATCH version increments indicate backward-compatible fixes.</li>
+</ul>
+</section>
+<!-- Security -->
+<section id="security">
+<h2>Security</h2>
+<p>For users or organizations that require additional layers of security, the .gpt file format supports encryption. This can be particularly useful in scenarios involving NDAs or proprietary information.</p>
+</section>
+<!-- Community and Contribution -->
+<section id="community">
+<h2>Community and Contribution</h2>
+<p>Contributing to the GPT Schema and .gpt file format is encouraged and can be done by forking the GitHub repository and creating pull requests.</p>
+</section>
+<!-- Conclusion -->
+<section id="conclusion">
+<h2>Conclusion</h2>
+<p>The GPT Session Save File (.gpt) standard aims to revolutionize how we interact with GPT models by providing a standardized format for saving session data. As AI continues to evolve, this standard will adapt, offering a
+
+robust and flexible framework for the future. By participating in this project, you are contributing to a more effective and meaningful human-AI interaction landscape.</p>
+</section>
+</div>
+</body>
+</html>
