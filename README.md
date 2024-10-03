@@ -8,7 +8,7 @@ The GPT-Standard repository hosts a living web standard that combines JSON and M
 
 The GSSF Standard is our answer to 'GPT Amnesia.' By creating a universal format for session saving, we're setting the stage for future interactions to be more insightful and coherent.
 
-## Tackling GPT Amnesia
+### Tackling GPT Amnesia
 **GPT Amnesia** refers to the gradual, loss of context or knowledge during prolonged sessions, leading to a breakdown in communication efficiency. It typically occurs when the LLM "forgets" earlier inputs in a session, impacting overall performance. Addressing these symptoms is a key focus of GSSF, ensuring the GPT retains essential context and minimizes information degradation during long interactions. 
 
 ### Metadata
